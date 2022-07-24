@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>calculator</title>
+    <script>
+        function pinktheme() {
+            document.bgColor = "pink";
+        }
+
+        function redtheme() {
+            document.bgColor = "red";
+        }
+
+        function bluetheme() {
+            document.bgColor = "blue";
+        }
+
+        function add() {
+            const num1 = parseInt(txt1.value);
+            const num2 = parseInt(txt2.value);
+            const sum = num1 + num2;
+            txt3.value = sum;
+            alert(sum)
+        }
+
+        function sub() {
+            const num1 = parseInt(txt1.value);
+            const num2 = parseInt(txt2.value);
+            const sum = num1 - num2;
+            txt3.value = sum;
+            alert(sum)
+        }
+
+        function multi() {
+            const num1 = parseInt(txt1.value);
+            const num2 = parseInt(txt2.value);
+            const sum = num1 * num2;
+            txt3.value = sum;
+            alert(sum)
+        }
+
+        function div() {
+            const num1 = parseInt(txt1.value);
+            const num2 = parseInt(txt2.value);
+            const sum = num1 / num2;
+            txt3.value = sum;
+            alert(sum)
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <input type="button" onclick="pinktheme()" ; width="100px" height="100px" style="background-color: pink;" />
+        <input type="button" onclick="redtheme()" ; width="100px" height="100px" style="background-color: red;" />
+        <input type="button" onclick="bluetheme()" ; width="100px" height="100px" style="background-color: blue;" /><br>
+        <br>Enter Number : <input type="text" height="100px" width="100px" id="txt1"><br>
+        <br>Enter Number : <input type="text" height="100px" width="100px" id="txt2"><br>
+        <br>Ans : <input type="text" height="100px" width="100px" id="txt3" readonly><br><br>
+        <input type="button" id="add" value="+" onclick="add()">
+        <input type="button" id="sub" value="-" onclick="sub()">
+        <input type="button" id="multi" value="*" onclick="multi()">
+        <input type="button" id="div" value="/" onclick="div()">
+
+    </div>
+</body>
+
+</html>

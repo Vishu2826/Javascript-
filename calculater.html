@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>calculater</title>
+    <script>
+        function pinktheme() {
+            document.bgColor = "pink";
+        }
+
+        function bluetheme() {
+            document.bgColor = "blue";
+        }
+
+        function browntheme() {
+            document.bgColor = "brown";
+        }
+
+        function add() {
+            const num1 = 10;
+            const num2 = 40;
+
+            const sum = num1 + num2;
+
+            txtAns.value = sum;
+        }
+
+        function sub() {
+            const num1 = 10;
+            const num2 = 40;
+
+            const sum = num1 - num2;
+
+            txtAns.value = sum;
+        }
+
+        function multi() {
+            const num1 = 10;
+            const num2 = 40;
+
+            const sum = num1 * num2;
+
+            txtAns.value = sum;
+        }
+
+        function div() {
+            const num1 = 10;
+            const num2 = 40
+
+            const sum = num1 / num2;
+
+            txtAns.value = sum;
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <input type="text" value="0" width="200px" id="txtAns" style="color:blueviolet;" ;/>
+        <br><br>
+        <input type="button" id="bt1" onclick="add()" value="+" style="background-color:rgb(24, 73, 73);" ;/>
+        <input type="button" id="bt2" onclick="sub()" value="-" style="background-color:rgb(24, 73, 73);" ;/>
+        <input type="button" id="bt3" onclick="multi()" value="*" style="background-color:rgb(24, 73, 73);" ;/>
+        <input type="button" id="bt4" onclick="div()" value="/" style="background-color:rgb(24, 73, 73);" ;/>
+
+    </div>
+
+    <hr/>
+    <div>
+        <input type="button" onclick="pinktheme()" ; width="100px" height="100px" style="background-color:pink;" ;/>
+        <input type="button" onclick="bluetheme()" ; width="100px" height="100px" style="background-color:blue;" ;/>
+        <input type="button" onclick="browntheme()" ; width="100px" height="100px" style="background-color:brown;" ;/>
+    </div>
+
+</body>
+
+</html>
