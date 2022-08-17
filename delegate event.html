@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("div").delegate("p", "click", function() {
+                $("p").css("background-color", "pink");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div style="background-color:green;">
+        <p>I am Vishva Prajapati. BCA student</p>
+    </div>
+
+    <p>Silver Oak University</p>
+
+</body>
+
+</html>
